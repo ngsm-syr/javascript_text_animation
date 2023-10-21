@@ -21,12 +21,6 @@ p {
 .line {
   background-color: #0093E9;
   width: 0;
-  transition: all .5s;
-}
-
-.line:hover {
-  background-color: #0093E9;
-  width: 100%;
 }
 
 .slide-in {

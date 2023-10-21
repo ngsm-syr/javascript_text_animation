@@ -34,7 +34,7 @@ spin.animate(spinKeyframes, spinOptions);
 const color = document.querySelector('.color');
 
 const colorKeyframes = {
-  backgroundColor: ['orange ','yellow ','lightgreen','slyblue'],
+  backgroundColor: ['orange ','yellow ','lightgreen','skyblue'],
 }
 
 const colorOptions = {
@@ -57,26 +57,23 @@ const lineKeyframes = {
 const lineOptions = {
   duration: 2000,
   fill: 'forwards',
+  easing:'ease-out',
 }
 
 line.animate(lineKeyframes,lineOptions);
 
 
 // 文字のスライドイン
-const slide = document.querySelectorAll('.slide-in');
-for (let i = 0; i < slide.length; i++) {
+const slide = document.querySelector('.slide-in');
 
-  const keyframes = {
-    opacity: [0, 1],
-    translate: ['0 50px', 0],
-  };
-  
-  const options = {
-    duration: 600,
-    delay: i * 400,
-    fill: 'forwards',
-  };
+const slideKeyframes = {
+  opacity: [0, 1],
+  translate: ['0 50px', 0],
+};
 
-  slide[i].animate(keyframes, options);
+const slideOptions = {
+  duration: 1000,
+  fill: 'forwards',
+};
 
-}
+slide.animate(slideKeyframes,slideOptions);
